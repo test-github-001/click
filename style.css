@@ -1,0 +1,53 @@
+@font-face {
+    /* ПРИДУМАЙТЕ ИМЯ ШРИФТУ Rubik */
+    font-family: Rubik;
+    /* ФАЙЛ Roboto-Regular.ttf */
+    src: url("./Rubik80sFade-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    /* ПОДКЛЮЧАЕМ ШРИФТ Rubik */
+    font-family: Rubik, Arial, sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+    /* ФОТОВАЯ КАРТИНКА  bg.jpg */
+    background-image: url(./bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* ОТКЛЮЧАЕМ ПОДСВЕТКУ КАСАНИЙ КВАДРАТАМИ */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+body * {
+    position: absolute;
+}
+
+.text {
+    text-align: center;
+    transform: translate(-50%, -50%) scale(0.95);
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 0 3px black, 0 0 6px black, 0 0 9px black;
+}
+
+.button {
+    transform: translate(-50%, -50%) scale(0.9);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.button:hover {
+    transform: translate(-50%, -50%) scale(1.0);
+}
