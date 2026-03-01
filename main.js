@@ -39,9 +39,12 @@ function addScoreBySecond() {
 
 // клик по карточке в магазине
 function getShopClick(event) {
-    const price = +event.target.dataset.price
-    const add = +event.target.dataset.add
-    const type = event.target.dataset.type
+    const shop = event.target.closest('.shop')
+    if (!shop) return
+
+    const price = +shop.dataset.price
+    const add = +shop.dataset.add
+    const type = shop.dataset.type
     if (score < price) {
         event.target.classList.add('red-border')
         setTimeout( () => event.target.classList.remove('red-border'), 300 )
