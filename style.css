@@ -31,23 +31,83 @@ body {
     user-select: none;
 }
 
-body * {
-    position: absolute;
-}
-
 .text {
+    position: absolute;
     text-align: center;
-    transform: translate(-50%, -50%) scale(0.95);
+    transform: translate(-50%, -50%);
     font-size: 50px;
     color: white;
     text-shadow: 0 0 3px black, 0 0 6px black, 0 0 9px black;
 }
 
+.add-info {
+    font-size: 25px;
+    color: lime;
+    transform: translate(0, 0);
+}
+.add-info p {
+    margin: 5px;
+    padding: 0;
+}
+
 .button {
-    transform: translate(-50%, -50%) scale(0.9);
-    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(0.95);
+    transition: transform 0.15s ease-in-out;
     cursor: pointer;
 }
 .button:hover {
     transform: translate(-50%, -50%) scale(1.0);
+}
+
+.shop-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 160px;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-bottom: 20px;
+}
+
+.shop {
+    display: inline-block;
+    position: relative;
+    width: 280px;
+    height: 140px;
+    background-color: rgb(58, 34, 99);
+    border: 2px solid white;
+    border-radius: 24px;
+    margin: 10px;
+
+    transform: scale(0.95);
+    transition: transform 0.15s ease-in-out;
+    cursor: pointer;
+}
+.shop:hover {
+    transform: scale(1.0);
+}
+.shop div {
+    text-align: center;
+}
+.shop .title {
+    font-size: 24px;
+}
+.shop .price {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 18px;
+    color: red;
+}
+.red-border {
+    border: 2px solid red;
+    box-shadow: 0 0 12px 6px red;
+}
+.lime-border {
+    border: 2px solid lime;
+    box-shadow: 0 0 12px 6px lime;
 }
