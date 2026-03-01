@@ -8,6 +8,15 @@
         <script defer src="./main.js"></script>
     </head>
     <body>
+        <div class="text add-info" style="top: 5vh; left: 10vw">
+            <p>за клик</p>
+            <p>+ <span id="add-click">1</span></p>
+        </div>
+        <div class="text add-info" style="top: 5vh; right: 10vw">
+            <p>в секунду</p>
+            <p>+ <span id="add-idle">0</span></p>
+        </div>
+
         <div
             id="score"
             class="text"
@@ -22,6 +31,31 @@
             src="./button.png"
             style="top: 50vh; left: 50vw"
         >
+
+        <div class="shop-container">
+
+            <div class="shop" data-type="click" data-add="1" data-price="100">
+                <div class="title">Буст клика + 1</div>
+                <div class="price">Цена: <b>100</b> </div>
+            </div>
+
+            <div class="shop" data-type="idle" data-add="1" data-price="100">
+                <div class="title">Буст + 1 в секунду</div>
+                <div class="price">Цена: <b>100</b> </div>
+            </div>
+
+            <div class="shop" data-type="idle" data-add="1" data-price="100">
+                <div class="title">Буст + 1 в секунду</div>
+                <div class="price">Цена: <b>100</b> </div>
+            </div>
+        
+
+            <div class="shop" data-type="idle" data-add="1" data-price="100">
+                <div class="title">Буст + 1 в секунду</div>
+                <div class="price">Цена: <b>100</b> </div>
+            </div>
+        
+        </div>
         
     </body>
 </html>
