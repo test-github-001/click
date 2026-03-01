@@ -59,6 +59,7 @@ function getShopClick(event) {
         scoreBySecond = scoreBySecond + add
         idleText.innerText = scoreBySecond
     }
-    event.target.classList.add('lime-border')
-    setTimeout( () => event.target.classList.remove('lime-border'), 300 )
+    shop.classList.add('lime-border')
+    setTimeout( () => shop.classList.remove('lime-border'), 300 )
 }
+
